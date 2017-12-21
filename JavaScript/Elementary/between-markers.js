@@ -21,6 +21,22 @@ function betweenMarkers(text, begin, end) {
     return 0;
 }
 
+
+
+// OTHER VERION 
+
+function betweenMarkers(text, begin, end) {
+    // returns substring between two given markers
+        
+    var start = (text.indexOf(begin) >= 0) ? text.indexOf(begin) + begin.length : 0;
+    var finish = (text.indexOf(end) < 0) ? text.length : text.indexOf(end);    
+    var c = (start > finish)? '' : text.substring(start, finish);
+    return c;
+}
+
+
+
+
 var assert = require('assert');
 
 if (!global.is_checking) {
