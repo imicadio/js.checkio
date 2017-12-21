@@ -11,8 +11,7 @@ function firstWord(a) {
             continue;
         }
         else{
-            return words[i];
-            
+            return words[i];            
         }
     }
     // your code here
